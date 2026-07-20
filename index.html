@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajapur Sugar & Chemical Industries Pvt. Ltd.</title>
+    <style>
+        /* CSS FOR STYLING & DESIGN */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Top Contact Bar */
+        .top-bar {
+            background-color: #1b4d3e;
+            color: #ffffff;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* Main Header & Navigation */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo h1 {
+            color: #1b4d3e;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1b4d3e;
+        }
+
+        /* Hero / Introduction Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placeholder.com') no-repeat center center/cover;
+            color: #ffffff;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+  /* Gallery Section Styling */
+        .gallery-section {
+            padding: 60px 5%;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .gallery-section h2 {
+            color: #1b4d3e;
+            font-size: 32px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .gallery-section p {
+            color: #666666;
+            margin-bottom: 30px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            height: 220px;
+            background-color: #ddd;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(27, 77, 62, 0.85);
+            color: #ffffff;
+            padding: 10px;
+            font-size: 14px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            .top-bar { flex-direction: column; text-align: center; gap: 5px; }
+            header { flex-direction: column; text-align: center; gap: 10px; }
+            nav ul { margin-top: 10px; }
+            .hero h2 { font-size: 28px; }
+            .hero p { font-size: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP CONTACT BAR -->
+    <div class="top-bar">
+        <div>📍 Rajapur Municipality-05, Dist. Bardiya, Badalpur, Nepal</div>
+        <div style="text-align: right;">
+            <div>📧 Email: <a href="mailto:rajapursugarmills@gmail.com" style="color: #ffffff; text-decoration: none; font-weight: bold;">rajapursugarmills@gmail.com</a> | 📞 Phone: +977-9858066606</div>
+            <div style="font-size: 12px; margin-top: 4px; color: #e0e0e0;">PAN No: <strong>619767008</strong> | Pvt. Reg. No: <strong>319189/080/081</strong></div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header style="background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 10px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000;">
+        <div class="logo" style="display: flex; align-items: center; height: 50px;">
+            <!-- 🟢 LOGO APPLIED WITH CAPITAL PNG EXTENSION -->
+            <img src="LOGO.PNG" alt="RSCIPL Logo" style="height: 100%; width: auto; object-fit: contain;">
+        </div>
+        <nav>
+            <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                <li style="margin-left: 20px;"><a href="#home" style="text-decoration: none; color: #333333; font-weight: bold;">Home</a></li>
+                <li style="margin-left: 20px;"><a href="#management" style="text-decoration: none; color: #333333; font-weight: bold;">Management</a></li>
+                <li style="margin-left: 20px;"><a href="#gallery" style="text-decoration: none; color: #333333; font-weight: bold;">Gallery</a></li>
+                <li style="margin-left: 20px;"><a href="#contact" style="text-decoration: none; color: #333333; font-weight: bold;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO / INTRODUCTION SECTION -->
+    <section class="hero" id="home">
+        <h2>Rajapur Sugar & Chemical Industries Pvt. Ltd.</h2>
+        <p>Welcome to one of Nepal's leading sugar and chemical manufacturing facilities. Dedicated to high-quality production, sustainable agricultural support for sugarcane farmers, and economic development in the Bardiya region.</p>
+ <p>नेपालकै एक अग्रणी चिनी तथा रासायनिक उत्पादन उद्योगमा यहाँलाई स्वागत छ। हामी उच्च गुणस्तरीय उत्पादन, उखु किसानहरूको दिगो कृषि उत्थान, र बर्दिया क्षेत्रको आर्थिक विकासमा पूर्ण रूपमा समर्पित छौँ।.</p>
+
+    </section>
+ <!-- GALLERY SECTION -->
+    <section class="gallery-section" id="gallery">
+        <h2>Factory Gallery</h2>
+        <p>A visual glimpse inside Rajapur Sugar & Chemical Industries Pvt. Ltd.</p>
+        
+        <div class="gallery-grid">
+            <!-- Photo 1 -->
+            <div class="gallery-item">
+                <img src="F1.PNG" alt="Sugar Plant">
+                <div class="gallery-caption">Main Processing Plant</div>
+            </div>
+            <!-- Photo 2 -->
+            <div class="gallery-item">
+                <img src="F2.PNG" alt="Machinery">
+                <div class="gallery-caption">Heavy Machinery & Automation</div>
+            </div>
+            <!-- Photo 3 -->
+            <div class="gallery-item">
+                <img src="F3.PNG" alt="Factory Building">
+                <div class="gallery-caption">Factory Infrastructure Exterior</div>
+            </div>
+            <!-- Photo 4 -->
+            <div class="gallery-item">
+                <img src="F4.PNG" alt="Lab">
+                <div class="gallery-caption">Chemical & Quality Testing Lab</div>
+            </div>
+            <!-- Photo 5 -->
+            <div class="gallery-item">
+                <img src="F5.PNG" alt="Storage">
+                <div class="gallery-caption">Warehouse & Storage Facility</div>
+            </div>
+            <!-- Photo 6 -->
+            <div class="gallery-item">
+                <img src="F6.PNG" alt="Admin">
+                <div class="gallery-caption">Administrative Blocks</div>
+            </div>
+            <!-- Photo 7 🟢 NEW ADDED -->
+            <div class="gallery-item">
+                <img src="F7.PNG" alt="Weighbridge">
+                <div class="gallery-caption">Weighbridge & Cane Procurement Yard</div>
+            </div>
+            <!-- Photo 8 🟢 NEW ADDED -->
+            <div class="gallery-item">
+                <img src="F8.PNG" alt="Eco Plant">
+                <div class="gallery-caption">Eco-Friendly Distillation Unit</div>
+            </div>
+        </div>
+    </section> <!-- ================================================================= -->
+    <!-- 🟢 FIXED MANAGEMENT HIERARCHY SECTION (COMBINED PART 1 & PART 2)  -->
+    <!-- ================================================================= -->
+    <section class="management-section" id="management" style="padding: 60px 5%; background-color: #ffffff; text-align: center;">
+        <h2 style="color: #1b4d3e; font-size: 32px; margin-bottom: 40px;">Our Management Desk</h2>
+        
+        <div class="management-container" style="max-width: 1100px; margin: 0 auto;">
+            
+            <!-- 1. MANAGING DIRECTOR (MD) DESK -->
+            <div class="profile-row" style="display: flex; align-items: center; background: #fdfdfd; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 35px; padding: 30px; text-align: left; border-left: 5px solid #1b4d3e; flex-wrap: wrap; gap: 30px;">
+                <div class="profile-img-box" style="flex: 0 0 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 3px solid #1b4d3e; background-color: #f1f1f1;">
+                    <!-- 🟢 FIXED LOCAL PHOTO LINK WITH CAPITAL EXTENSION -->
+                    <img src="MDSIR.PNG" alt="MD Sir" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="profile-details" style="flex: 1; min-width: 280px;">
+                    <h3 style="color: #333333; font-size: 24px; margin-bottom: 4px;">MR. OLI SIR</h3>
+                    <div class="designation" style="color: #1b4d3e; font-weight: bold; font-size: 16px; text-transform: uppercase; margin-bottom: 12px;">Managing Director (MD)</div>
+                    <div class="contact-info" style="font-size: 14px; color: #555555; margin-bottom: 15px; background: #f4f7f5; padding: 6px 12px; display: inline-block; border-radius: 4px;">📞 Mobile: +977-9858066606 | 📧 Email: md@rajapursugar.com</div>
+                    <!-- 🟢 FIXED SYNTAX WRAPPERS -->
+                    <p class="about-text" style="color: #666666; line-height: 1.6; font-size: 15px; margin-bottom: 10px;">"Welcome to Rajapur Sugar & Chemical Industries. Our mission is to drive industrial excellence in Nepal while maintaining an unbreakable bond with our sugarcane farmers. Through advanced processing standards, we ensure premium output and contribute actively to the local and national agricultural economy."</p> 
+                    <p class="about-text" style="color: #666666; line-height: 1.6; font-size: 15px;">"राजापुर चिनी & रासायनिक उद्योगमा यहाँलाई स्वागत छ। हाम्रो मुख्य उद्देश्य उखु किसानहरूसँगको अटुट सम्बन्धलाई कायम राख्दै नेपालमा औद्योगिक उत्कृष्टता हासिल गर्नु हो। उन्नत प्रशोधन मापदण्डहरू मार्फत, हामी उच्च गुणस्तरीय उत्पादन सुनिश्चित गर्दछौँ र स्थानीय तथा राष्ट्रिय कृषि अर्थव्यवस्थामा सक्रिय योगदान पुर्‍याउँछौँ।"</p>
+                </div>
+            </div>
+
+            <!-- 2. GENERAL MANAGER (GM) DESK -->
+            <div class="profile-row" style="display: flex; align-items: center; background: #fdfdfd; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 35px; padding: 30px; text-align: left; border-left: 5px solid #1b4d3e; flex-wrap: wrap; gap: 30px;">
+                <div class="profile-img-box" style="flex: 0 0 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 3px solid #1b4d3e; background-color: #f1f1f1;">
+                    <!-- 🟢 FIXED LOCAL PHOTO LINK WITH CAPITAL EXTENSION -->
+                    <img src="GMSIR.PNG" alt="GM Sir" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="profile-details" style="flex: 1; min-width: 280px;">
+                    <h3 style="color: #333333; font-size: 24px; margin-bottom: 4px;">MR. KRISHNA KR. MAHATO</h3>
+                    <div class="designation" style="color: #1b4d3e; font-weight: bold; font-size: 16px; text-transform: uppercase; margin-bottom: 12px;">General Manager (GM)</div>
+                    <div class="contact-info" style="font-size: 14px; color: #555555; margin-bottom: 15px; background: #f4f7f5; padding: 6px 12px; display: inline-block; border-radius: 4px;">📞 Mobile: +977-9809107250</div>
+                    <!-- 🟢 FIXED SYNTAX WRAPPERS -->
+                    <p class="about-text" style="color: #666666; line-height: 1.6; font-size: 15px; margin-bottom: 10px;">"As General Manager, my focus is on operational efficiency, seamless production management, and building a sustainable workflow ecosystem. We are committed to achieving maximum plant capacity while strictly adhering to safety and environmental regulations."</p>
+                    <p class="about-text" style="color: #666666; line-height: 1.6; font-size: 15px;">"महाप्रबन्धक (General Manager) को रूपमा, मेरो मुख्य ध्यान परिचालन दक्षता, सहज उत्पादन व्यवस्थापन, र एक दिगो कार्यप्रवाह प्रणालीको निर्माणमा केन्द्रित छ। हामी सुरक्षा र वातावरणीय नियमहरूको पूर्ण पालना गर्दै कारखानाको अधिकतम उत्पादन क्षमता हासिल गर्न प्रतिबद्ध छौँ।"</p>
+                </div>
+            </div>
+
+            <!-- 3. ADMIN HEAD OF DEPARTMENT (HOD) -->
+            <div class="profile-row" style="display: flex; align-items: center; background: #fdfdfd; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 35px; padding: 30px; text-align: left; border-left: 5px solid #1b4d3e; flex-wrap: wrap; gap: 30px;">
+                <div class="profile-img-box" style="flex: 0 0 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 3px solid #1b4d3e; background-color: #f1f1f1;">
+                    <!-- 🟢 FIXED LOCAL PHOTO LINK WITH CAPITAL EXTENSION -->
+                    <img src="ADMINSIR.PNG" alt="Admin HOD" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="profile-details" style="flex: 1; min-width: 280px;">
+                    <h3 style="color: #333333; font-size: 24px; margin-bottom: 4px;">MR. INDRA PRAKASH DHAKAAL</h3>
+                    <div class="designation" style="color: #1b4d3e; font-weight: bold; font-size: 16px; text-transform: uppercase; margin-bottom: 12px;">Head of Department (Admin HOD)</div>
+                    <div class="contact-info" style="font-size: 14px; color: #555555; margin-bottom: 15px; background: #f4f7f5; padding: 6px 12px; display: inline-block; border-radius: 4px;">📞 Mobile: +977-9848572381</div>
+                    <!-- 🟢 FIXED SYNTAX WRAPPERS -->
+                    <p class="about-text" style="color: #666666; line-height: 1.6; font-size: 15px; margin-bottom: 10px;">"The Administration department serves as the backbone of our industry. We manage workplace protocols, human resources, compliance, and industrial relations to maintain a highly motivated, skilled, and safe corporate environment across all factory divisions."</p>
+                    <p class="about-text" style="color: #666666; line-height: 1.6; font-size: 15px;">"प्रशासन विभाग हाम्रो उद्योगको मेरुदण्ड (backbone) को रूपमा रहेको छ। हामी कारखानाका सबै शाखाहरूमा अत्यधिक उत्प्रेरित, दक्ष र सुरक्षित कर्पोरेट वातावरण कायम राख्न कार्यस्थलका नियमहरू, मानव संसाधन (Human Resources), अनुपालन (Compliance), र औद्योगिक सम्बन्धहरू व्यवस्थापन गर्दछौँ।"</p>
+                </div>
+            </div>
+
+            <!-- 4. CANE GENERAL MANAGER -->
+            <div class="profile-row" style="display: flex; align-items: center; background: #fdfdfd; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 35px; padding: 30px; text-align: left; border-left: 5px solid #1b4d3e; flex-wrap: wrap; gap: 30px;">
+                <div class="profile-img-box" style="flex: 0 0 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 3px solid #1b4d3e; background-color: #f1f1f1;">
+                    <!-- 🟢 FIXED LOCAL PHOTO LINK WITH CAPITAL EXTENSION -->
+                    <img src="CANEGMSIR.PNG" alt="Cane GM" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="profile-details" style="flex: 1; min-width: 280px;">
+                    <h3 style="color: #333333; font-size: 24px; margin-bottom: 4px;">MR. AWADH KISHOR YADAV</h3>
+                    <div class="designation" style="color: #1b4d3e; font-weight: bold; font-size: 16px; text-transform: uppercase; margin-bottom: 12px;">Cane General Manager</div>
+                    <div class="contact-info" style="font-size: 14px; color: #555555; margin-bottom: 15px; background: #f4f7f5; padding: 6px 12px; display: inline-block; border-radius: 4px;">📞 Mobile: +977-9858066148</div>
+                    <!-- 🟢 FIXED SYNTAX WRAPPERS -->
+                    <p class="about-text" style="color: #666666; line-height: 1.6; font-size: 15px; margin-bottom: 10px;">"The Cane department acts as the direct bridge between the mill and thousands of sugarcane growers. We oversee crop development, smooth procurement scheduling, weighbridge management, and ensure timely payment support systems to empower our farming partners."</p>
+                    <p class="about-text" style="color: #666666; line-height: 1.6; font-size: 15px;">"उखु (Cane) विभागले चिनी मिल र हजारौँ उखु उत्पादक किसानहरू बीच प्रत्यक्ष पुलको रूपमा काम गर्दछ। हामी हाम्रा कृषक साझेدارहरूलाई सशक्त बनाउन बाली विकास, सहज खरिद तालिका (Procurement Scheduling), तौलपुल (Weighbridge) व्यवस्थापन, र समयमै भुक्तानी सहायता प्रणालीको रेखदेख गर्दछौँ।"</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+          
+ <!-- ================================================================= -->
+    <!-- 🟢 FIXED CONTACT FOOTER & REAL LIVE GOOGLE MAP SECTION            -->
+    <!-- ================================================================= -->
+    <section class="contact-section" id="contact" style="padding: 60px 5%; background-color: #f4f7f5; display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+        
+        <!-- Left Side: Clean Address & Verified Contacts -->
+        <div class="contact-info-box" style="flex: 1; min-width: 300px; max-width: 500px; text-align: left;">
+            <h2 style="color: #1b4d3e; font-size: 32px; margin-bottom: 20px;">Contact Us</h2>
+            <p style="color: #666666; font-size: 16px; margin-bottom: 25px; line-height: 1.6;">"If you require any information regarding the factory or want to understand cane procurement, you can contact the official address provided below." <br><br> "यदि तपाईंलाई कारखाना सम्बन्धी कुनै पनि जानकारी चाहिएमा वा उखु खरिद (Procurement) को बारेमा बुझ्न परेमा, तल दिइएको आधिकारिक ठेगानामा सम्पर्क गर्न सक्नुहुनेछ।"</p>
+            
+            <div style="margin-bottom: 15px; font-size: 16px; color: #333333;">
+                <strong>📍 Official Address:</strong><br>
+                Rajapur Municipality-05, Dist. Bardiya,<br>
+                Badalpur, Nepal
+            </div>
+            
+            <div style="margin-bottom: 15px; font-size: 16px; color: #333333;">
+                <strong>📧 Official Gmail:</strong><br>
+               <a href="mailto:rajapursugarmills@gmail.com" style="color: #1b4d3e; text-decoration: none; font-weight: bold;">rajapursugarmills@gmail.com</a>
+            </div>
+            
+            <div style="margin-bottom: 15px; font-size: 16px; color: #333333;">
+                <strong>📞 Phone Number:</strong><br>
+                +977-9858066606 / +977-9809107250
+            </div>
+        </div>
+
+       <!-- Right Side: Calibrated Real Google Map Grid -->
+        <div class="map-box" style="flex: 1; min-width: 300px; max-width: 750px; height: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 2px solid #1b4d3e;">
+            <!-- Real Live Map Frame targeting Rajapur Area, Bardiya, Nepal -->
+            <iframe
+  src="https://www.google.com/maps?q=Rajapur+Sugar+%26+Chemicals+Industries+Pvt.+Ltd.&output=embed"
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+        </div>
+    </section>
+
+    <!-- WEBSITE LOWER FOOTER COPYRIGHT BAR -->
+    <footer style="background-color: #1b4d3e; color: #ffffff; padding: 20px 5%; text-align: center; font-size: 14px;">
+        &copy; Copyright 2026. All Rights Reserved | <strong>Rajapur Sugar & Chemical Industries Pvt. Ltd.</strong>
+    </footer>
+</body>
+</html>
